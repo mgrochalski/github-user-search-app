@@ -1,0 +1,47 @@
+:root {
+  --azure: #0079FF;
+  --slate-gray: #697C9A;
+  --queen-blue: #4B6A9B;
+  --gunmetal: #2B3442;
+  --ghost-white: #F6F8FF;
+  --white: #FEFEFE;
+  --dark-gunmetal: #141D2F;
+  --yankees-blue: #1E2A47;
+}
+[data-theme='light'] {
+  --background: var(--ghost-white);
+  --background-element: var(--white);
+  --text-primary: var(--gunmetal);
+  --text-secondary: var(--queen-blue);
+  --text-mode: var(--slate-gray);
+  --box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+[data-theme='dark'] {
+  --background: var(--dark-gunmetal);
+  --background-element: var(--yankees-blue);
+  --text-primary: var(--white);
+  --text-secondary: var(--white);
+  --text-mode: var(--white);
+}
+
+$white: #FFFFFF;
+$font-family: 'Space Mono', sans-serif;
+
+
+@mixin h1 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  color: var(--text-primary);
+}
+
+@mixin h3 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}

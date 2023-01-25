@@ -1,0 +1,44 @@
+@import '../../../variables';
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 48px;
+  margin-top: 44px;
+}
+
+.user {
+  text-align: left;
+}
+
+.name {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: var(--text-primary);
+}
+
+.date {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+
+  color: var(--text-mode);
+}
+
+.login {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--azure);
+}

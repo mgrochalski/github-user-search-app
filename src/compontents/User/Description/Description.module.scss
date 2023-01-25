@@ -1,0 +1,18 @@
+@import 'src/variables.scss';
+
+
+.main {
+  margin-top: 20px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: var(--text-secondary);
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+
+  text-align: left;
+}

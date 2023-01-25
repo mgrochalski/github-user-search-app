@@ -1,0 +1,35 @@
+@import "src/variables.scss";
+
+.main {
+  background: var(--background);
+  border-radius: 10px;
+  margin-top: 32px;
+  margin-right: 48px;
+  height: 85px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+
+  color: var(--text-secondary);
+
+  &Value {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: uppercase;
+
+    color: var(--text-primary);
+  }
+
+}

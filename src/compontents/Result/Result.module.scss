@@ -1,0 +1,23 @@
+@import 'src/variables.scss';
+
+.main {
+  height: 419px;
+  margin-top: 24px;
+  background-color: var(--background-element);
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.img {
+  margin: 48px 37px 0 48px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
