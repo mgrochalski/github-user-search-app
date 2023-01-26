@@ -3,7 +3,7 @@ import DarkModeImg from 'src/images/icon-moon.svg';
 import LightModeImg from 'src/images/icon-sun.svg';
 
 const Nav = ({isDarkMode, onModeChange}) => {
-    const mode = isDarkMode ? "Dark" :  "Light" ;
+    const mode = isDarkMode ? "Light" : "Dark" ;
     const img = isDarkMode ? LightModeImg : DarkModeImg;
 
     return (

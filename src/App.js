@@ -6,7 +6,7 @@ import Result from "src/compontents/Result";
 import {getUser} from "src/api/github";
 
 function App() {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(true);
     const [login, setLogin] = useState('octacat');
     const [bio, setBio] = useState(null);
     const [isNoResult, setIsNoResult] = useState(false);
