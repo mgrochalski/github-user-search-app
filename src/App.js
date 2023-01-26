@@ -6,9 +6,9 @@ import Result from "src/compontents/Result";
 import {getUser} from "src/api/github";
 
 function App() {
-    const [isDark, setIsDark] = useState(true);
+    const [isDark, setIsDark] = useState(false);
+    const [login, setLogin] = useState('octacat');
     const [bio, setBio] = useState(null);
-    const [login, setLogin] = useState(null);
     const [isNoResult, setIsNoResult] = useState(false);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ function App() {
             if (ignore) {
              return;
             }
-
+            setBio(null);
             if (result === null) {
                 setIsNoResult(true);
             } else {
@@ -30,7 +30,7 @@ function App() {
         return () => {
             ignore = true;
         }
-    }, [login])
+    }, [login]);
 
     const searchUser = (userName) => {
         setLogin(userName);
@@ -43,7 +43,7 @@ function App() {
                     setIsDark(!isDark);
                 }}/>
                 <Search onSearchHandler={searchUser} isNoResult={isNoResult}/>
-                <Result bio={bio}/>
+                {bio && <Result bio={bio}/> }
             </div>
         </div>
     );

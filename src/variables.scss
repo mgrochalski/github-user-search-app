@@ -48,3 +48,19 @@ $font-family: 'Space Mono', sans-serif;
   font-size: 18px;
   line-height: 25px;
 }
+
+@mixin h4 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+@mixin h5 {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}

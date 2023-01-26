@@ -1,8 +1,17 @@
 @import "src/variables.scss";
 
-.main {
+@mixin display-inline {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.main {
+  @include display-inline;
   margin-top: 37px;
+}
+
+.next {
+  @include display-inline;
+  margin-top: 19px;
 }

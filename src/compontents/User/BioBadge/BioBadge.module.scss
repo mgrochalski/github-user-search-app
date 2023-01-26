@@ -1,14 +1,8 @@
 @import "src/variables.scss";
 
 .main {
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-
+  @include h5;
   color: var(--text-secondary);
-
   flex: 50%;
   text-align: left;
   display: flex;

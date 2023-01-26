@@ -7,7 +7,7 @@ const Social = ({user}) => (
             <BioBadge type={options.location} value={user.location}/>
             <BioBadge type={options.twitter} value={user.twitter_username}/>
         </div>
-        <div className={styles.main}>
+        <div className={styles.next}>
             <BioBadge type={options.website} value={user.blog}/>
             <BioBadge type={options.company} value={user.company}/>
         </div>
