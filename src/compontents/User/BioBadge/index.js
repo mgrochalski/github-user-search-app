@@ -8,28 +8,44 @@ const options = {
     location: {
         img: LocationImg,
         alt: 'location',
+        isLink: false,
     },
     website: {
         img: WebsiteImg,
         alt: 'website',
+        isLink: true,
     },
     twitter: {
         img: TwitterImg,
         alt: 'twitter',
+        isLink: false,
     },
     company: {
         img: CompanyImg,
         alt: 'company',
+        isLink: false,
     }
 }
 
 const BioBadge = ({type, value}) => {
-    const text = !!value ? value : 'Not available';
+    const getText = () => {
+        if (!value) {
+            return 'Not available';
+        }
+
+        if (type.isLink) {
+            return <a href={value} target='_blank' rel="noreferrer" >{value}</a>;
+        }
+
+        return value;
+    }
+
+    const notAvailable = !!value ? '' : styles.notAvailable;
 
     return (
-        <div className={styles.main}>
+        <div className={`${styles.main} ${notAvailable}`}>
             <img src={type.img} alt={type.alt} className={styles.img}/>
-            {text}
+            {getText()}
         </div>
     );
 

@@ -1,6 +1,6 @@
 import styles from 'src/App.module.scss';
 import Nav from "src/compontents/Nav";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Search from "src/compontents/Search";
 import Result from "src/compontents/Result";
 import {getUser} from "src/api/github";
@@ -8,10 +8,17 @@ import {getUser} from "src/api/github";
 function App() {
     const [isDark, setIsDark] = useState(true);
     const [bio, setBio] = useState(null);
+    const [login, setLogin] = useState(null);
     const [isNoResult, setIsNoResult] = useState(false);
 
-    const searchUser = (userName) => {
-        getUser(userName).then((result) => {
+    useEffect(() => {
+        let ignore = false;
+
+        getUser(login).then((result) => {
+            if (ignore) {
+             return;
+            }
+
             if (result === null) {
                 setIsNoResult(true);
             } else {
@@ -19,6 +26,14 @@ function App() {
                 setIsNoResult(false);
             }
         });
+
+        return () => {
+            ignore = true;
+        }
+    }, [login])
+
+    const searchUser = (userName) => {
+        setLogin(userName);
     }
 
     return (

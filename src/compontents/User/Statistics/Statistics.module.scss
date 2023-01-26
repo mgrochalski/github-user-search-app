@@ -13,13 +13,17 @@
 }
 
 .stat {
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 19px;
+  text-align: left;
 
-  color: var(--text-secondary);
+  &Title {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: var(--text-secondary);
+  }
 
   &Value {
     font-family: $font-family;
@@ -31,5 +35,4 @@
 
     color: var(--text-primary);
   }
-
 }

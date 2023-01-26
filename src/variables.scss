@@ -1,5 +1,6 @@
 :root {
   --azure: #0079FF;
+  --light-blue: #60ABFF;
   --slate-gray: #697C9A;
   --queen-blue: #4B6A9B;
   --gunmetal: #2B3442;
@@ -9,6 +10,7 @@
   --yankees-blue: #1E2A47;
   --red: #F74646;
 }
+
 [data-theme='light'] {
   --background: var(--ghost-white);
   --background-element: var(--white);

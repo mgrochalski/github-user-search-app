@@ -12,8 +12,21 @@
   flex: 50%;
   text-align: left;
   display: flex;
+
+  a {
+    text-decoration: none;
+    color: var(--text-secondary);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .img {
   margin-right: 16px;
+}
+
+.notAvailable {
+  opacity: 0.5;
 }
