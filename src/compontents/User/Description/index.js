@@ -1,8 +1,8 @@
 import styles from './Description.module.scss';
 
-const Description = () => (
+const Description = ({user}) => (
     <div className={styles.main}>
-        This profile has no bio
+        {user.bio ?? '(No bio)'}
     </div>
 );
 

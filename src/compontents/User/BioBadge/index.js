@@ -3,6 +3,7 @@ import LocationImg from 'src/images/icon-location.svg';
 import WebsiteImg from 'src/images/icon-website.svg';
 import TwitterImg from 'src/images/icon-twitter.svg';
 import CompanyImg from 'src/images/icon-company.svg';
+
 const options = {
     location: {
         img: LocationImg,
@@ -22,9 +23,8 @@ const options = {
     }
 }
 
-
 const BioBadge = ({type, value}) => {
-    const text = value ?? 'Not available';
+    const text = !!value ? value : 'Not available';
 
     return (
         <div className={styles.main}>
