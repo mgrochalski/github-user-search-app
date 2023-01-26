@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   margin-right: 48px;
-  margin-top: 44px;
+  flex: 60%;
 }
 
 .user {
@@ -30,4 +30,37 @@
   line-height: 24px;
 
   color: var(--azure);
+}
+
+@media (max-width: $tablet) {
+  .main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-top: 52px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    margin-top: 32px;
+  }
+
+  .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .login {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .date {
+    font-size: 13px;
+    line-height: 19px;
+  }
 }

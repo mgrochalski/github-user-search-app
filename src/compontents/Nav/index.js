@@ -9,7 +9,6 @@ const Nav = ({isDarkMode, onModeChange}) => {
     return (
         <div className={styles.main}>
             <p className={styles.logo}>devfinder</p>
-
             <div className={styles.mode} onClick={onModeChange}>{mode}<img src={img} className={styles.img} alt='mode'/></div>
         </div>
     )

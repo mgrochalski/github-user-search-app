@@ -21,6 +21,25 @@
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $tablet) {
+  .main {
+    height: 481px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    height: 517px;
+  }
+
+  .img {
+    margin: 32px 20px 0 24px;
+    width: 70px;
+    height: 70px;
+  }
 }

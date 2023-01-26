@@ -10,6 +10,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex: 100%;
+  margin-left: 202px;
 }
 
 .stat {
@@ -34,5 +36,17 @@
     text-transform: uppercase;
 
     color: var(--text-primary);
+  }
+}
+
+@media (max-width: $tablet) {
+  .main {
+    margin: 8px 40px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    margin: 23px 24px 0 24px
   }
 }

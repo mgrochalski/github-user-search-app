@@ -64,3 +64,33 @@
     background-color: var(--light-blue);
   }
 }
+
+@media (max-width: $tablet) {
+  .search {
+    &_input {
+      width: 275px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    height: 60px;
+  }
+
+  .search {
+    margin-left: 16px;
+
+    &_input {
+      font-size: 13px;
+      margin-left: 9px;
+      width: 185px;
+    }
+  }
+
+  .btn {
+    height: 46px;
+    width: 84px;
+    margin-right: 7px;
+  }
+}

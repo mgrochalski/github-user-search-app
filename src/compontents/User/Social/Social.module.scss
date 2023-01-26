@@ -9,9 +9,43 @@
 .main {
   @include display-inline;
   margin-top: 37px;
+  flex: 100%;
+  margin-left: 202px;
 }
 
 .next {
   @include display-inline;
   margin-top: 19px;
+  flex: 100%;
+  margin-left: 202px;
+}
+
+@media (max-width: $tablet) {
+  .main {
+    margin: 22px 40px 0 40px;
+  }
+
+  .next {
+    margin: 19px 40px 0 40px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-left: 24px;
+    row-gap: 16px;
+    align-items: flex-start;
+  }
+
+  .next {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 24px;
+    row-gap: 16px;
+    align-items: flex-start;
+  }
 }

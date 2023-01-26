@@ -31,6 +31,9 @@
 $white: #FFFFFF;
 $font-family: 'Space Mono', sans-serif;
 
+$tablet: 768px;
+$mobile: 670px;
+
 
 @mixin h1 {
   font-family: $font-family;

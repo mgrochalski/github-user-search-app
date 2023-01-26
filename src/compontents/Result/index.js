@@ -6,8 +6,8 @@ import Social from "src/compontents/User/Social";
 
 const Result = ({bio}) => (
     <div className={styles.main}>
-        <img src={bio.avatar_url} alt='avatar' className={styles.img}/>
         <div className={styles.content}>
+            <img src={bio.avatar_url} alt='avatar' className={styles.img}/>
             <MainUserInformation user={bio}/>
             <Description user={bio}/>
             <Statistics user={bio}/>
