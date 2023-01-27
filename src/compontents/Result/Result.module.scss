@@ -1,0 +1,45 @@
+@import 'src/variables.scss';
+
+.main {
+  height: 419px;
+  margin-top: 24px;
+  background-color: var(--background-element);
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.img {
+  margin: 48px 37px 0 48px;
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $tablet) {
+  .main {
+    height: 481px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    height: 517px;
+  }
+
+  .img {
+    margin: 32px 20px 0 24px;
+    width: 70px;
+    height: 70px;
+  }
+}

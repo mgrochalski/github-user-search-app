@@ -1,4 +1,33 @@
+@import "src/variables.scss";
 
 .app {
-  text-align: center;
+  margin: 0;
+  background-color: var(--background);
 }
+
+.content {
+  padding-top: 144px;
+  padding-bottom: 144px;
+  text-align: center;
+  background-color: var(--background);
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet) {
+  .content {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    margin: 0 98px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .content {
+    padding-top: 31px;
+    padding-bottom: 79px;
+    margin: 0 24px;
+  }
+}
+
+

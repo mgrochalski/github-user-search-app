@@ -1,0 +1,96 @@
+@import "src/variables.scss";
+
+.main {
+  height: 69px;
+  background-color: var(--background-element);
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.search {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+
+  &_input {
+    @include h3;
+    background-color: var(--background-element);
+    color: var(--text-primary);
+
+    margin-left: 24px;
+    width: 300px;
+    border: none;
+
+    &::placeholder {
+      color: var(--text-secondary);
+    }
+  }
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.noResultText {
+  @include h4;
+  margin-right: 24px;
+  color: var(--red);
+}
+
+.btn {
+  height: 50px;
+  width: 105px;
+  margin-right: 10px;
+
+  background-color: var(--azure);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover {
+    background-color: var(--light-blue);
+  }
+}
+
+@media (max-width: $tablet) {
+  .search {
+    &_input {
+      width: 275px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    height: 60px;
+  }
+
+  .search {
+    margin-left: 16px;
+
+    &_input {
+      font-size: 13px;
+      margin-left: 9px;
+      width: 185px;
+    }
+  }
+
+  .btn {
+    height: 46px;
+    width: 84px;
+    margin-right: 7px;
+  }
+}

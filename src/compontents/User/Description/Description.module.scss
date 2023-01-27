@@ -1,0 +1,27 @@
+@import 'src/variables.scss';
+
+.main {
+  @include h5;
+  margin-top: -39px;
+  color: var(--text-secondary);
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  text-align: left;
+
+  flex: 100%;
+  margin-left: 202px;
+}
+
+@media (max-width: $tablet) {
+  .main {
+    margin: 24px 40px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    font-size: 13px;
+    line-height: 25px;
+    margin: 32px 24px 0 24px;
+  }
+}

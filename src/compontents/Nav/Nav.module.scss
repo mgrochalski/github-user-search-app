@@ -1,0 +1,38 @@
+@import "src/variables.scss";
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 38px;
+}
+
+.logo {
+  @include h1;
+}
+
+.mode {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-mode);
+
+  cursor: pointer;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+}
